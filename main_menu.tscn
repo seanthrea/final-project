@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://24u1vnl0t7qo"]
+
+[ext_resource type="Script" uid="uid://di17l2s5uj1u4" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=338579363]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -47.0
+offset_top = -60.0
+offset_right = 36.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Label" type="Label" parent="." unique_id=745201535]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 23.0
+text = "JB'S STARS	"
+
+[node name="Easy" type="Button" parent="." unique_id=244873123]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 32.0
+offset_right = 56.0
+offset_bottom = 63.0
+text = "EASY"
+
+[node name="Meduim" type="Button" parent="." unique_id=1928112311]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 73.0
+offset_right = 76.0
+offset_bottom = 104.0
+text = "MEDUIM"
+
+[node name="Hard" type="Button" parent="." unique_id=653236497]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 118.0
+offset_right = 60.0
+offset_bottom = 149.0
+text = "HARD"
+
+[connection signal="pressed" from="Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="Meduim" to="." method="_on_meduim_pressed"]
+[connection signal="pressed" from="Hard" to="." method="_on_hard_pressed"]
