@@ -294,4 +294,4 @@ position = Vector2(-421, -128)
 [node name="Spawn9" type="Marker2D" parent="GhostSpawns" unique_id=100242124]
 position = Vector2(-209, -473)
 
-[node name="GameUI" parent="." unique_id=1372094754 instance=ExtResource("10_4c57u")]
+[node name="UI" parent="." unique_id=1372094754 instance=ExtResource("10_4c57u")]

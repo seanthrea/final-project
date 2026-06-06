@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="FinalProject"
-run/main_scene="uid://clpg2xasfwawy"
+run/main_scene="uid://24u1vnl0t7qo"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://dgba8a47cc3tm"
 
 [input]
 
