@@ -31,7 +31,7 @@ func _ready():
 func add_score():
 
 	score += 1
-	score_label.text = "Score: " + str(score)
+	score_label.text = "COINS: " + str(score)
 
 	if score >= total_coins:
 		game_ui.show_win()
