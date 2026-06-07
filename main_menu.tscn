@@ -1,52 +1,235 @@
 [gd_scene format=3 uid="uid://24u1vnl0t7qo"]
 
 [ext_resource type="Script" uid="uid://di17l2s5uj1u4" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://bkob1hd6mkniw" path="res://assets/upheavtt.ttf" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://bada05xe707qv" path="res://assets/main_menu_background.png" id="2_fu7sn"]
+[ext_resource type="Script" uid="uid://b3w6l2abtmdvr" path="res://easy.gd" id="4_jix8l"]
+[ext_resource type="Script" uid="uid://dvegqn4b7jjqb" path="res://meduim.gd" id="5_glbon"]
+[ext_resource type="Script" uid="uid://bo616cxuplxw" path="res://hard.gd" id="6_nlkkf"]
+[ext_resource type="Script" uid="uid://3jcsmhu0qjgp" path="res://quit.gd" id="7_qe12f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0.55, 1, 0.6025001, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
+bg_color = Color(0.2901961, 0.7137255, 0.9019608, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(0.23088002, 0.96, 0.06719999, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
+bg_color = Color(0.93, 0.646815, 0.3441, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+bg_color = Color(1, 0.53333336, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy7ct"]
+bg_color = Color(0.98758966, 0.60038817, 0.60038817, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0o4t1"]
+bg_color = Color(0.95, 0.03800002, 0.03800002, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k4wn"]
+bg_color = Color(0.009652454, 0.009652454, 0.009652454, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5v2v"]
+bg_color = Color(0.02, 0.02, 0.02, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 1
 
 [node name="MainMenu" type="Control" unique_id=338579363]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -47.0
-offset_top = -60.0
-offset_right = 36.0
-offset_bottom = 88.0
+anchor_left = 0.381
+anchor_top = 0.53300005
+anchor_right = 0.381
+anchor_bottom = 0.53300005
+offset_left = 110.81998
+offset_top = -97.76004
+offset_right = 193.81998
+offset_bottom = 50.23996
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_06t4h")
 
-[node name="Label" type="Label" parent="." unique_id=745201535]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1233822035]
 layout_mode = 0
-offset_right = 80.0
-offset_bottom = 23.0
-text = "JB'S STARS	"
+offset_left = -606.5
+offset_top = -286.0
+offset_right = 681.5
+offset_bottom = 434.0
+texture = ExtResource("2_fu7sn")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=745201535]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -146.5
+offset_top = -151.0
+offset_right = 171.5
+offset_bottom = -97.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.039215688, 0.16470589, 0.41960785, 1)
+theme_override_colors/font_outline_color = Color(0.44705883, 0.84705883, 1, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 100
+text = "JB'S STARESCAPE"
 
 [node name="Easy" type="Button" parent="." unique_id=244873123]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 32.0
-offset_right = 56.0
-offset_bottom = 63.0
+offset_left = -86.5
+offset_top = -4.0
+offset_right = 177.5
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_glbon")
 text = "EASY"
+script = ExtResource("4_jix8l")
 
 [node name="Meduim" type="Button" parent="." unique_id=1928112311]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 73.0
-offset_right = 76.0
-offset_bottom = 104.0
+offset_left = -86.5
+offset_top = 82.0
+offset_right = 177.5
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8qtwp")
 text = "MEDUIM"
+script = ExtResource("5_glbon")
 
 [node name="Hard" type="Button" parent="." unique_id=653236497]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 118.0
-offset_right = 60.0
-offset_bottom = 149.0
+offset_left = -86.5
+offset_top = 172.0
+offset_right = 177.5
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_dy7ct")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0o4t1")
 text = "HARD"
+script = ExtResource("6_nlkkf")
 
+[node name="Quit" type="Button" parent="." unique_id=2002667110]
+layout_mode = 0
+offset_left = -86.5
+offset_top = 258.0
+offset_right = 177.5
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(0.88, 0.17599998, 0.17599998, 1)
+theme_override_fonts/font = ExtResource("2_7vrkn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_0k4wn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j5v2v")
+text = "QUIT"
+script = ExtResource("7_qe12f")
+
+[connection signal="mouse_entered" from="Easy" to="Easy" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Easy" to="Easy" method="_on_mouse_exited"]
 [connection signal="pressed" from="Easy" to="." method="_on_easy_pressed"]
+[connection signal="mouse_entered" from="Meduim" to="Meduim" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Meduim" to="Meduim" method="_on_mouse_exited"]
 [connection signal="pressed" from="Meduim" to="." method="_on_meduim_pressed"]
+[connection signal="mouse_entered" from="Hard" to="Hard" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Hard" to="Hard" method="_on_mouse_exited"]
 [connection signal="pressed" from="Hard" to="." method="_on_hard_pressed"]
+[connection signal="mouse_entered" from="Quit" to="Quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Quit" to="Quit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -4,14 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://b1kf471apvats" path="res://assets/ghost.png" id="1_v5pp4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6attn"]
-radius = 9.055386
+radius = 12.165525
 
 [node name="Ghost" type="CharacterBody2D" unique_id=1741576331]
 texture_filter = 1
 script = ExtResource("1_6attn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1046635249]
+position = Vector2(9.536743e-07, 2.3841858e-07)
+scale = Vector2(0.067693606, 0.058270678)
 texture = ExtResource("1_v5pp4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=654352143]
+position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_6attn")
