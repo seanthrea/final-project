@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cctlc7e40saaf"]
+
+[ext_resource type="Script" uid="uid://dxk7qm3jq3n60" path="res://sound_manager.gd" id="1_8s0do"]
+[ext_resource type="AudioStream" uid="uid://c7tmlx7onrlgo" path="res://sounds/GameSound.mp3" id="2_yjequ"]
+[ext_resource type="AudioStream" uid="uid://12ii6rwxqhdi" path="res://sounds/CoinSound.mp3" id="3_hkcgi"]
+[ext_resource type="AudioStream" uid="uid://cg0gy04fue1te" path="res://sounds/WinSound.mp3" id="4_ie3hi"]
+[ext_resource type="AudioStream" uid="uid://bgdadnrcmc5vu" path="res://sounds/GameOver_Sound.mp3" id="5_75b5a"]
+
+[node name="SoundManager" type="Node" unique_id=970404630]
+script = ExtResource("1_8s0do")
+
+[node name="GameSound" type="AudioStreamPlayer" parent="." unique_id=2015900003]
+stream = ExtResource("2_yjequ")
+autoplay = true
+parameters/looping = true
+
+[node name="CoinSound" type="AudioStreamPlayer" parent="." unique_id=1581921025]
+stream = ExtResource("3_hkcgi")
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=493214920]
+process_mode = 2
+stream = ExtResource("4_ie3hi")
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=594513702]
+process_mode = 2
+stream = ExtResource("5_75b5a")

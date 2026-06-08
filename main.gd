@@ -32,8 +32,10 @@ func add_score():
 
 	score += 1
 	score_label.text = "COINS: " + str(score)
+	SoundManager.play_coin()
 
 	if score >= total_coins:
+		SoundManager.play_win()
 		game_ui.show_win()
 		get_tree().paused = true
 
@@ -82,5 +84,6 @@ func toggle_pause():
 # =========================
 
 func game_over():
+	SoundManager.play_death()
 	game_ui.show_game_over()
 	get_tree().paused = true
