@@ -14,7 +14,6 @@ script = ExtResource("1_hdmo1")
 [node name="Panel" type="Panel" parent="." unique_id=947493190]
 layout_mode = 0
 offset_left = -2.0
-offset_top = 10.0
 offset_right = 1280.0
 offset_bottom = 722.0
 
@@ -29,24 +28,24 @@ offset_right = 881.5
 offset_bottom = 388.5
 grow_horizontal = 0
 
+[node name="Resume Button" type="Button" parent="VBoxContainer" unique_id=1885371672]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_nwcfo")
+theme_override_font_sizes/font_size = 30
+text = "▶ RESUME BUTTON"
+
 [node name="Restart Button" type="Button" parent="VBoxContainer" unique_id=663969824]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 30
-text = "RESTART BUTTON"
+text = "↻ RESTART BUTTON"
 
 [node name="Home Button" type="Button" parent="VBoxContainer" unique_id=1699433450]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 30
-text = "HOME BUTTON"
+text = "⌂ HOME BUTTON"
 
-[node name="Resume Button" type="Button" parent="VBoxContainer" unique_id=1885371672]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nwcfo")
-theme_override_font_sizes/font_size = 30
-text = "RESUME BUTTON"
-
+[connection signal="pressed" from="VBoxContainer/Resume Button" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="VBoxContainer/Restart Button" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="VBoxContainer/Home Button" to="." method="_on_home_pressed"]
-[connection signal="pressed" from="VBoxContainer/Resume Button" to="." method="_on_resume_pressed"]
