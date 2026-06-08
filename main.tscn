@@ -297,4 +297,3 @@ text = "Score: 0"
 [node name="GameUI" parent="." unique_id=1372094754 instance=ExtResource("10_4c57u")]
 
 [node name="PauseMenu" parent="." unique_id=84592045 instance=ExtResource("9_kek77")]
-[node name="GameUI" parent="." unique_id=1372094754 instance=ExtResource("10_4c57u")]
